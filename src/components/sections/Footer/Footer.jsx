@@ -56,7 +56,10 @@ const Footer = () => {
           {/* Desktop grid layout */}
           <div className="footer-grid">
             <div className="footer-column">
-              <h3 className="footer-logo">APEK</h3>
+              <div className="footer-logo-combo">
+                <img src="/images/APEK White.png" alt="APEK Logo" className="footer-logo-img" />
+                <span className="footer-logo-text">APEK</span>
+              </div>
               <p className="footer-tagline">
                 Modern school management by APEKTECH INC
               </p>
@@ -90,7 +93,10 @@ const Footer = () => {
           {/* Mobile accordion layout */}
           <div className="footer-accordion">
             <div className="footer-column">
-              <h3 className="footer-logo">APEK</h3>
+              <div className="footer-logo-combo">
+                <img src="/images/APEK White.png" alt="APEK Logo" className="footer-logo-img" />
+                <span className="footer-logo-text">APEK</span>
+              </div>
               <p className="footer-tagline">
                 Modern school management by APEKTECH INC
               </p>
