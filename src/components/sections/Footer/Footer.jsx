@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="footer-column">
               <div className="footer-logo-combo">
                 <img src="/images/APEK White.png" alt="APEK Logo" className="footer-logo-img" />
-                <span className="footer-logo-text">APEK</span>
+                <span className="footer-logo-text">APEKTECH INC</span>
               </div>
               <p className="footer-tagline">
                 Modern school management by APEKTECH INC
