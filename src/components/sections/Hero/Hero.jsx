@@ -24,8 +24,8 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="hero-title-full">Transform Your School Administration with <span className="brand-highlight">Apek</span></span>
-            <span className="hero-title-mobile">Smart School Management by <span className="brand-highlight">Apek</span></span>
+            <span className="hero-title-full">Transform Your School Administration with <span className="brand-highlight">APEK</span></span>
+            <span className="hero-title-mobile">Smart School Management by <span className="brand-highlight">APEK</span></span>
           </h1>
           <p className="hero-subtitle">
             <span className="hero-subtitle-full">Modern school management made simple. Streamline operations, enhance communication, 

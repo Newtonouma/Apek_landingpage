@@ -45,7 +45,7 @@ const Benefits = () => {
     <section className="benefits" id="benefits">
       <div className="benefits-container">
         <div className="benefits-header">
-          <h2 className="section-title">Why Schools Choose Apek</h2>
+          <h2 className="section-title">Why Schools Choose APEK</h2>
           <p className="section-subtitle">
             Transform your school operations with measurable results and proven benefits
           </p>

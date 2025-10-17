@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src="/images/APEK White.png" alt="Apek Logo" className="navbar-logo-img" />
+          <img src="/images/APEK White.png" alt="APEK Logo" className="navbar-logo-img" />
         </div>
         <button className="navbar-menu-btn" aria-label="Menu" onClick={() => setMenuOpen((open) => !open)}>
           <span className="navbar-menu-icon">☰</span>

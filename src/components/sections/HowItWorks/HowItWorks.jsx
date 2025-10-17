@@ -35,7 +35,7 @@ const HowItWorks = () => {
         <div className="how-it-works-header">
           <h2 className="section-title">How It Works</h2>
           <p className="section-subtitle">
-            Get started with Apek in four simple steps
+            Get started with APEK in four simple steps
           </p>
         </div>
         <div className="steps-container">

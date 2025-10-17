@@ -8,7 +8,7 @@ const CTA = () => {
         <div className="cta-content">
           <h2 className="cta-title">Ready to Transform Your School?</h2>
           <p className="cta-subtitle">
-            Join 500+ schools already using Apek to streamline their operations and enhance education.
+            Join 500+ schools already using APEK to streamline their operations and enhance education.
           </p>
           <div className="cta-buttons">
             <button className="btn-cta primary">Start Free Trial</button>

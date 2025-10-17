@@ -13,7 +13,7 @@ const Testimonials = () => {
       name: 'Mary Wanjiku',
   role: 'Principal, Tumaini Springs Academy',
       image: <Icons.AcademicCap className="testimonial-avatar-icon" />,
-      quote: 'Apek makes our work easier and faster.',
+  quote: 'APEK makes our work easier and faster.',
       rating: 4
     },
     {
