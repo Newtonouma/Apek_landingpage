@@ -1,0 +1,74 @@
+/* Core carousel styles based on your provided CSS */
+.benefits-carousel {
+    --n: 6;
+    --k: 0;
+    display: grid;
+    grid-gap: .5em 2em;
+    grid-template:
+        repeat(2, max-content) 1fr max-content/ max-content 1fr;
+    place-self: center;
+    color: #f1f5f9;
+    font: 1em poppins, sans-serif;
+    counter-reset: k calc(1 + var(--k)) n var(--n);
+    transition: --p 0s .8s, --v .8s;
+    background: #2563eb;
+    border-radius: 1em;
+    padding: 2em 1em;
+}
+
+.benefits-carousel article {
+    grid-area: 1/1/-1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Use the same card styles as grid */
+.benefit-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f59e0b;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.benefit-description {
+    font-size: 1rem;
+    color: #e0e7ef;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.benefit-stat {
+    font-weight: bold;
+    color: #f59e0b;
+    margin-top: 0.5em;
+}
+
+
+@media (min-width: 769px) {
+    .benefits-carousel {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        display: none !important;
+    }
+}

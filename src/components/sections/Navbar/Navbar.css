@@ -1,0 +1,182 @@
+.navbar-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+}
+/* Mobile menu button */
+.navbar-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    z-index: 101;
+}
+
+.navbar-menu-icon {
+    display: inline-block;
+}
+
+.navbar {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f59e0b;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+    color: #f59e0b;
+}
+
+/* Auth dropdown styles */
+.navbar-auth {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.auth-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.auth-btn:hover, .auth-btn:focus {
+    background: rgba(245, 158, 11, 0.1);
+    outline: none;
+}
+
+.auth-dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #2563eb;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+    border-radius: 8px;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.auth-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+.auth-link:last-child {
+    border-bottom: none;
+}
+
+.auth-link:hover {
+    background: #f59e0b;
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar-menu-btn {
+        display: block;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background: #2563eb;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0.5rem 0;
+        display: none;
+        box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+        z-index: 100;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        display: block;
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+
+    .navbar-auth {
+        margin-left: 1rem;
+    }
+
+    .auth-dropdown {
+        min-width: 100px;
+        right: 0;
+        top: 110%;
+    }
+
+    .auth-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+}
